@@ -1,10 +1,9 @@
 import { fastify } from 'fastify'
+import { uploadRoute } from './routes/upload'
 
 const app = fastify()
 
-app.get('/', () => {
-  return 'Hello World'
-})
+app.register(uploadRoute)
 
 app
   .listen({
