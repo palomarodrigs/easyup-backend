@@ -13,7 +13,9 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
+    "@fastify/multipart": "^8.1.0",
     "@prisma/client": "^5.10.2",
-    "fastify": "^4.26.2"
+    "fastify": "^4.26.2",
+    "firebase": "^10.8.1"
   }
 }
