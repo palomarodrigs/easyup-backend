@@ -6,7 +6,7 @@ import { firebaseApp } from '../lib/firebase'
 import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage'
 import { prisma } from '../lib/prisma'
 
-export async function uploadRoute(app: FastifyInstance) {
+export async function uploadImageRoute(app: FastifyInstance) {
   app.register(fastifyMultipart, {
     limits: {
       fileSize: 1_048_576 * 25, // 25mb

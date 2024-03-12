@@ -1,9 +1,9 @@
 import { fastify } from 'fastify'
-import { uploadRoute } from './routes/upload'
+import { uploadImageRoute } from './routes/upload-image'
 
 const app = fastify()
 
-app.register(uploadRoute)
+app.register(uploadImageRoute)
 
 app
   .listen({
